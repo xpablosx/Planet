@@ -5,17 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Planetas</title>
+    <title>Astroimagens</title>
 </head>
 
 <body>
     <header>
-        <h1>Planetas 🪐</h1>
+        <h1>AstroImagens 🪐</h1>
     </header>
     <main>
         <section>
-            <input type="text" placeholder="Digite o nome do Planeta">
-            <button>Pesquisar</button>
+            <input type="text" id="data" placeholder="Digite a data (DD/MM/AA)">
+            <button onclick="buscar()">Buscar</button>
+        
+            <script>
+                function buscar() {
+          // Pega o valor da entrada
+          let data = document.getElementById('data').value;
+        
+          // Separa os componentes da data (considerando o formato Ano/Mes/Dia)
+          let ano = data.substring(0, 2);
+          let mes = data.substring(3, 5);
+          let dia = data.substring(6, 8);
+        
+          // Converte para o formato desejado (AAMMdd)
+          let novaData = dia + mes + ano;
+        
+          // Cria o link completo
+          let link = 'https://apod.nasa.gov/apod/ap' + novaData + '.html';
+        
+          // Atualiza o link na página
+          window.location.href = link
+        }
+            </script>
         </section>
     </main>
     <footer>
