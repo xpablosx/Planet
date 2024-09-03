@@ -20,7 +20,7 @@ h1 {
     font-size: 3rem; /* Tamanho da fonte */
     color: #e9eaec; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    letter-spacing: 0.rem; /* Espaçamento entre letras */
 }
 
 /* Estiliza as seções da página */
@@ -33,16 +33,20 @@ section {
 
 /* Estiliza os inputs dentro das seções */
 section input {
-    background-image: url(https://i.pinimg.com/564x/7c/52/c4/7c52c44b7633183566eb07778ac554bd.jpg);
+    background-image: url(https://i.pinimg.com/originals/47/70/de/4770dea4c4e1ee9cd83843763ff39786.gif);
     width: 30rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: #0054d3; /* Cor do texto */
+    color: #45474B; /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
+
+input::placeholder { 
+    color:#2e2e30; 
+   }
 
 /* Estiliza os botões dentro das seções */
 section button {
