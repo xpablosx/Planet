@@ -95,17 +95,17 @@ section button {
     bottom: 50px;
 }
 
-img[src="gifs/mercurio.png"]{
+img[src="mercurio.png"]{
     height: 200px;
     position: absolute;
 }
 
-img[src="gifs/venus.png"]{
+img[src="venus.png"]{
     height: 140px;
     position: absolute;
 }
 
-img[src="gifs/terra.png"]{
+img[src="terra.png"]{
     height: 120px;
     position: absolute;
 }
