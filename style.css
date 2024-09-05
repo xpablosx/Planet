@@ -20,7 +20,7 @@ h1 {
     font-size: 3rem; /* Tamanho da fonte */
     color: #e9eaec; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.rem; /* Espaçamento entre letras */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
 }
 
 /* Estiliza as seções da página */
@@ -39,7 +39,7 @@ section input {
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: #45474B; /* Cor do texto */
+    color: #45474b; /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
@@ -47,6 +47,27 @@ section input {
 input::placeholder { 
     color:#2e2e30; 
    }
+
+input[type="text"]{
+padding-left: 50px;
+}
+
+   .search-container {
+    position: relative; /* Torna o container um contêiner de posicionamento */
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+}
+  
+  .fa-solid.fa-magnifying-glass {
+    position: absolute;
+    top: 34px;
+    left: 25px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #35373a;
+  }
+
 
 /* Estiliza os botões dentro das seções */
 section button {
@@ -59,27 +80,67 @@ section button {
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr
+}
+
+.planeta-container{
+    position: relative; /* Torna o container um contêiner de posicionamento */
+    display: flex;
+    align-items: center;
+    right: 50px;
+    bottom: 50px;
+}
+
+img[src="gifs/mercurio.png"]{
+    height: 200px;
+    position: absolute;
+}
+
+img[src="gifs/venus.gif"]{
+    height: 130px;
+    padding-right: 20px;
+}
+
+img[src="gifs/terra.gif"]{
+    height: 140px;
+    padding-right: 35px;
+}
+
+img[src="gifs/marte.gif"]{
+    height: 135px;
+    padding-right: 30px;
+}
+    
+
+
+
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
+    width: 90%;
     background: #FFFFFF; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
+    padding: 10px;
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
+    padding-left: 1px;
+    margin: 10px;
     font-size: 1.5rem; /* Tamanho da fonte */
     color: #222831; /* Cor do texto */
 }
@@ -90,6 +151,11 @@ section button {
     color: #30475E; /* Cor do texto dos links */
 }
 
+a[target="_blank"]{
+    padding-left: 50px;
+}
+
+
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
@@ -98,7 +164,7 @@ section button {
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
     color: #45474B; /* Cor do texto */
-    margin: 0.5rem 0; /* Margem acima e abaixo */
+    padding-left: 70px;
 }
 
 /* Estiliza o rodapé da página */
