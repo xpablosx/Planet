@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f1aa1025eb.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-    <title>Astroimagens</title>
+    <title>Planetas</title>
 </head>
 
 <body>
@@ -18,91 +17,24 @@
         <section>
             <div class="search-container">
                 <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="data" placeholder="Digite um planeta">
-            </div>
-            <button onclick="buscar()">Buscar</button>
+            <input type="text" placeholder="Digite o Nome do Planeta" id="campo-pesquisa">
+             </div>
+            <button onclick="pesquisar()">Pesquisar</button>
+        
         </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-                <h2>Mercúrio</h2>
-                <p class="descricao-meta">Mercúrio é o menor planeta do nosso Sistema Solar e também o mais próximo do Sol! Por causa disso, ele é super quente e não tem água como a Terra.</p>
-                <a href="https://science.nasa.gov/mercury/" target="_blank">Mais informações</a>
-                <div class="planeta-container">
-                    <img src="mercurio.png" alt="Imagem de Mercúrio">
-                </div>
-            </div>
-        
-            <div class="item-resultado">
-                <h2>Vênus</h2>
-                <p class="descricao-meta">Vênus é o segundo planeta mais próximo do Sol e é conhecido como o planeta mais quente do Sistema Solar.</p>
-                <a href="https://science.nasa.gov/venus/" target="_blank">Mais informações</a>
-                <div class="planeta-container">
-                    <img src="venus.png" alt="Imagem de Vênus">
-                </div>
-            </div>
-        
-            <div class="item-resultado">
-                <h2>Terra</h2>
-                <p class="descricao-meta">A Terra é o terceiro planeta a partir do Sol e o único que se sabe abrigar vida.</p>
-                <a href="https://science.nasa.gov/earth/" target="_blank">Mais informações</a>
-                <div class="planeta-container">
-                    <img src="terra.png" alt="Imagem da Terra">
-                </div>
-            </div>
-        
-            <div class="item-resultado">
-                <h2>Marte</h2>
-                <p class="descricao-meta">Marte, o Planeta Vermelho, é o quarto planeta a partir do Sol.</p>
-                <a href="https://science.nasa.gov/mars/" target="_blank">Mais informações</a>
-                <div class="planeta-container">
-                    <img src="gifs/marte.png" alt="Imagem de Marte">
-                </div>
-            </div>
-        
-            <div class="item-resultado">
-                <h2>Júpiter</h2>
-                <p class="descricao-meta">Júpiter é o maior planeta do Sistema Solar e é conhecido por sua Grande Mancha Vermelha.</p>
-                <a href="https://science.nasa.gov/jupiter/" target="_blank">Mais informações</a>
-                <div class="planeta-container">
-                    <img src="gifs/jupiter.png" alt="Imagem de Júpiter">
-                </div>
-            </div>
-        
-            <div class="item-resultado">
-                <h2>Saturno</h2>
-                <p class="descricao-meta">Saturno é famoso por seus anéis feitos de gelo e rochas.</p>
-                <a href="https://science.nasa.gov/saturn/" target="_blank">Mais informações</a>
-                <div class="planeta-container">
-                    <img src="gifs/saturno.png" alt="Imagem de Saturno">
-                </div>
-            </div>
-        
-            <div class="item-resultado">
-                <h2>Urano</h2>
-                <p class="descricao-meta">Urano é um planeta gelado e tem uma rotação diferente dos outros planetas.</p>
-                <a href="https://science.nasa.gov/uranus/" target="_blank">Mais informações</a>
-                <div class="planeta-container">
-                    <img src="gifs/urano.png" alt="Imagem de Urano">
-                </div>
-            </div>
-        
-            <div class="item-resultado">
-                <h2>Netuno</h2>
-                <p class="descricao-meta">Netuno é o planeta mais distante do Sol e é conhecido por seus ventos fortes.</p>
-                <a href="https://science.nasa.gov/neptune/" target="_blank">Mais informações</a>
-                <div class="planeta-container">
-                    <img src="gifs/netuno.png" alt="Imagem de Netuno">
-                </div>
-            </div>
-        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
         </section>
     </main>
-    </main>
+    <div class="AstroImagens">
+        <input type="text" id="data" placeholder="Digite a data (dd/mm/aa)">
+        <button onclick="buscar()">Buscar</button>
+    </div>
     <footer>
-        <p>2024 - Planetas. Todos os direitos reservados
-        </p>
-        <p></p>
+        <p>2024 - Planetas. Todos os direitos reservados©</p>
+        <p>Entre em contato pelo email: ichi.ox11@gmail.com</p>
     </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

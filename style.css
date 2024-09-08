@@ -110,11 +110,31 @@ img[src="terra.png"]{
     position: absolute;
 }
 
-img[src="gifs/marte.png"]{
+img[src="marte.png"]{
+    height: 135px;
+    position: absolute;
+}
+
+img[src="jupiter.png"]{
+    height: 120px;
+    position: absolute;
+    left: 18px;
+}
+
+img[src="saturno.png"]{
+    height: 135px;
+    position: absolute;
+}
+
+img[src="urano.png"]{
     height: 135px;
     position: absolute;
 }
     
+img[src="netuno.png"]{
+    height: 135px;
+    position: absolute;
+}
 
 
 
@@ -175,3 +195,4 @@ footer {
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
+
