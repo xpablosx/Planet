@@ -6,7 +6,7 @@ function pesquisar() {
 
     // se campoPesquisa for uma string sem nada
     if (!campoPesquisa) {
-        section.innerHTML = "<p>Nada foi encontrado. Você precisa digitar o nome de um Planeta</p>"
+        section.innerHTML = `<p class="nada">Nada foi encontrado. Você precisa digitar o nome de um Planeta</p>`
         return 
     }
 
@@ -24,8 +24,9 @@ function pesquisar() {
         titulo = dado.titulo.toLowerCase()
         descricao = dado.descricao.toLowerCase()
         tags = dado.tags.toLowerCase()
+        imagem = dado.tags.toLowerCase()
         // se titulo includes campoPesquisa
-        if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
+        if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa) || imagem.includes(campoPesquisa)) {
             // cria um novo elemento
             resultados += `
             <div class="item-resultado">
@@ -34,13 +35,16 @@ function pesquisar() {
                 </h2>
                 <p class="descricao-meta">${dado.descricao}</p>
                 <a href=${dado.link} target="_blank">Mais informações</a>
+                <div class="planeta-container">
+                <img src=${dado.imagem}>
+                </div>
             </div>
         `;
         }
     }
 
     if (!resultados) {
-        resultados = "<p>Nada foi encontrado</p>"
+        resultados = `<p class="nada">Nada foi encontrado</p>`
     }
 
     // Atribui os resultados gerados à seção HTML

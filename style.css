@@ -4,7 +4,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-image: url(https://i.pinimg.com/originals/d8/a0/df/d8a0dfc5b6356039df4a6d00cbdf56f1.jpg);
+    background-image: url(fundo.jpg);
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -91,38 +91,42 @@ section button {
     position: relative; /* Torna o container um contêiner de posicionamento */
     display: flex;
     align-items: center;
-    right: 50px;
-    bottom: 50px;
+    right: 60px;
+    bottom: 60px;
 }
 
 img[src="mercurio.png"]{
     height: 200px;
     position: absolute;
+    left: 10px;
 }
 
 img[src="venus.png"]{
     height: 140px;
     position: absolute;
+    left: 10px;
 }
 
 img[src="terra.png"]{
     height: 120px;
     position: absolute;
+    left: 10px;
 }
 
 img[src="marte.png"]{
-    height: 135px;
+    height: 130px;
+    left: 5px;
     position: absolute;
 }
 
 img[src="jupiter.png"]{
-    height: 120px;
+    height: 105px;
     position: absolute;
-    left: 18px;
+    left: 13px;
 }
 
 img[src="saturno.png"]{
-    height: 135px;
+    height: 150px;
     position: absolute;
 }
 
@@ -132,8 +136,9 @@ img[src="urano.png"]{
 }
     
 img[src="netuno.png"]{
-    height: 135px;
+    height: 120px;
     position: absolute;
+    left: 10px;
 }
 
 
@@ -182,6 +187,10 @@ img[src="netuno.png"]{
 .descricao-meta {
     color: #45474B; /* Cor do texto */
     padding-left: 70px;
+}
+
+.nada {
+color: #d8dce4;
 }
 
 /* Estiliza o rodapé da página */
