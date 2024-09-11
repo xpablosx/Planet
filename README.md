@@ -22,7 +22,7 @@
 
 ###
 
-<p align="left">Você pode acessar o projeto de duas maneiras:<br><br>• 𝗢𝗻𝗹𝗶𝗻𝗲: Visite o link xpablosx.github.io/Planet e divirta-se explorando os planetas!<br>• 𝗟𝗼𝗰𝗮𝗹𝗺𝗲𝗻𝘁𝗲:<br>    1. Faça um clone do repositório: https://github.com/xpablosx/Planet. <br>    2. Abra o arquivo `index.html` em seu navegador.</p>
+<p align="left">Você pode acessar o projeto de duas maneiras:<br><br>• 𝗢𝗻𝗹𝗶𝗻𝗲: Visite o link https://xpablosx.github.io/Planet e divirta-se explorando os planetas!<br>• 𝗟𝗼𝗰𝗮𝗹𝗺𝗲𝗻𝘁𝗲:<br>    1. Faça um clone do repositório: https://github.com/xpablosx/Planet. <br>    2. Abra o arquivo `index.html` em seu navegador.</p>
 
 ###
 
