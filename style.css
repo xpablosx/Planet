@@ -212,15 +212,16 @@ input::placeholder {
 .item-resultado {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
     padding: 1.5rem;
+    padding-right: 200px; /* reserva espaço para o planeta */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
-    overflow: visible; /* permite que a imagem saia do card */
+    overflow: hidden; /* agora o planeta fica dentro da área */
 }
 
 .item-resultado:hover {
-    transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: none; /* card não se move mais */
 }
 
 .item-resultado h2 {
@@ -251,7 +252,7 @@ input::placeholder {
 /* Container do planeta */
 .planeta-container {
     position: absolute;
-    right: -40px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     width: 160px;
@@ -259,7 +260,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    z-index: 5;
     pointer-events: none;
 }
 
