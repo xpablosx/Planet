@@ -18,6 +18,8 @@ body {
     min-height: 100vh;
     color: #e9eaec;
     line-height: 1.6;
+    border-radius: 20px;
+  
 }
 
 /* Container principal */
@@ -184,39 +186,25 @@ input::placeholder {
 
 /* Resultados da pesquisa */
 .resultados-pesquisa {
-    max-height: 60vh;
-    overflow-y: auto;
+
     margin-top: 1rem;
     border-radius: 15px;
 }
 
-.resultados-pesquisa::-webkit-scrollbar {
-    width: 8px;
-}
 
-.resultados-pesquisa::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-}
-
-.resultados-pesquisa::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-}
-
-.resultados-pesquisa::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
 
 /* Item de resultado */
 .item-resultado {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
-    padding: 1.5rem;
-    padding-right: 200px; /* reserva espaço para o planeta */
+    padding: 1.1rem;
+    padding-right: 170px; /* ajusta o padding para o planeta maior */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
-    overflow: hidden; /* agora o planeta fica dentro da área */
+    overflow: visible; /* permite que o planeta transborde */
+    border-radius: 20px;
+   
+  
 }
 
 .item-resultado:hover {
@@ -252,16 +240,11 @@ input::placeholder {
 /* Container do planeta */
 .planeta-container {
     position: absolute;
-    right: 20px;
+    width: 280px;
+    height: 280px;
+    right: -120px;
     top: 50%;
     transform: translateY(-50%);
-    width: 160px;
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
-    pointer-events: none;
 }
 
 .planeta-container img {
